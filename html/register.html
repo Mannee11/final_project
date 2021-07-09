@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Account</title>
+    <link rel="shortcut icon" type="image" href="../images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/project/js/register.js"></script>
+    <link rel="stylesheet" href="/project/css/stt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Welcome to Ninjaz</h1>
+        <p>Create an account.</p>
+    </div>
+    <div class="navbar">
+        <a href="/project/php/user/login.php" class="right"><i class="fa fa-sign-in"></i>     Sign in</a>
+        <a href="../index.html">Home</a>
+        <a href="about.html" class="left">About</a>
+        <a href="contactus.html" class="left">Contact Us</a>
+    </div>
+
+    <div class="main">
+        <center><img src="../images/logo.png"></center>
+        <div class="container">
+            <form name="registerForm" action="/project/php/user/register.php" onsubmit="return validateRegForm()" method="post">
+                <div class="row">
+                    <div class="col-25">
+                        <i class="fa fa-user icon"></i>
+                        <label for="fname">Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="idname" name="name" placeholder="Please key in your name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <i class="fa fa-envelope icon"></i>
+                        <label for="lname">Email</label>
+                        </div>
+                    <div class="col-75">
+                        <input type="text" id="idemail" name="email" placeholder="Please key in your email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <i class="fa fa-phone icon"></i>
+                        <label for="lphone">Phone number</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="tel" id="idphone" name="phone" placeholder="Please key in your phone number">
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <i class="fa fa-key icon"></i>
+                        <label for="lpassword">Password</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="password" id="idpass" name="passworda" placeholder="Please key in your password">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <i class="fa fa-key icon"></i>
+                        <label for="lpassword">Re-enter password</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="password" id="idpassb" name="passwordb"
+                        placeholder="Please re-enter your password">
+                    </div>
+                </div>
+                <br>
+                <br>
+               
+
+                <div class="row">
+                    <center>
+                    <div><input type="submit" value="Register"></div>
+                    </center>
+                </div>
+                <br>
+                <br>
+            </form>
+            
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

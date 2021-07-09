@@ -1,0 +1,785 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  
+  body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Georgia, serif;
+    margin: 0;
+    font-size:16px;
+    overflow: auto;
+  }
+  
+  /* Header/logo Title */
+  
+  .header {
+    padding: 15px;
+    text-align: center;
+    background: #F08080;
+    
+  }
+  button[type=submit] {
+  background-color: #F08080;
+  color: white;
+  padding: 25px 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-left:10px;
+  }
+    .forget {
+      background-color: #F08080;
+      padding: 15px 60px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      
+      
+    }
+  /* Increase the font size of the heading */
+  
+  .header h1 {
+    position: center;
+    top: 18px;
+    left: 10px;
+    font-size: 25px;
+    color :black;
+  }
+  .header p {
+    position: center;
+    top: 18px;
+    left: 10px;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+  }
+  .header img {
+    width: 200px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    float: left;
+    padding-bottom: 10px;
+    position: center;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    
+}
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size:18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 98px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 115px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content1 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content1 a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content1 {
+    display: block;
+  }
+  
+  .float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 100px;
+    right: 30px;
+    background-color: #F08080;
+    color: black;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+  }
+  .float .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .float .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  .float:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  .imgselection {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    display: inline-block;
+    border: 3px solid black;
+  }
+  
+  .my-float {
+    margin-top: 25px;
+  }
+  .container {
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 10px 10px;
+    border-color: black;
+  
+    
+  }
+  .navbar {
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  }
+  
+  /* Style the navigation bar links */
+  
+  .navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  }
+  
+  /* Right-aligned link */
+  
+  .navbar a.right {
+  float: right;
+  }
+  
+  .navbar a.left {
+  float: left;
+  }
+  /* Change color on hover */
+  .navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  }
+  .navbar input[type=search] {
+  padding: 20px 20px;
+  margin-top: 8px;
+  margin-right: 16px;
+    font-size: 50px;
+    border: none;
+  }
+  
+  .navbar  button {
+    float: right;
+    padding: 20px 20px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 50px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar  button:hover {
+    background: #ccc;
+  }
+  
+  .navbar{
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+  }
+  .container i {
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  label {
+    padding: 12px 12px 12px 12px;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  input[type=text], input[type=number], input[type=tel],input[type=password],input[type=file],input[type=time],select {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 6px solid #ccc;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: 25px;
+  }
+  
+  input[type=submit] {
+      background-color: #DC143C;
+    width: 100%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 6px solid #ccc;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: 25px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #DC143C;
+    font-weight: bold;
+  }
+  .icon {
+    color: black;
+    min-width: 10%;
+    text-align: center;
+    margin-top: 6px;
+    padding: 12px 5px;
+    /* margin: 8px 0; */
+  }
+
+  
+  .input-icons i {
+    position: absolute;
+    right:10px;
+    top:3px;
+    cursor: pointer;
+  }
+  
+  .input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+    position:relative;
+  }
+  .search-header {
+    width: 100%;
+    width: 70%;
+    margin-top: 6px;
+  }
+  .search{
+    width: 100%;
+    width: 70%;
+    margin-top: 6px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+         position: center;
+    }
+    .main {
+        padding: 10px;
+    }
+    .row {
+            grid-template-columns: repeat(2,1fr);  
+    }
+    .forget {
+          
+  color: white;
+      background-color: #F08080;
+      padding: 15px 60px;
+        border: none;
+      border: 6px solid #ccc;
+        cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      
+      
+    }
+    
+    .col-25 {
+        float: center;
+        width: 30%;
+        margin-top: 6px;
+    }
+    
+    .col-75 {
+        float: left;
+        width: 70%;
+        margin-top: 6px;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 50%;
+    height: 50%;
+    
+    text-align: center;
+    font-family: calibri;
+    border: 3px solid black;
+    color: indigo;
+    padding-bottom: 10px;
+    background-color: #FFEFD5;
+    font-weight: bold;
+    
+  
+  }
+  
+  
+  .navbar input[type=search] {
+    padding:10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .navbar button {
+    float: right;
+    padding: 10px 15px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 50px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .column {
+  float: left;
+  width: 420px;
+  padding-bottom: 40px;
+  margin-left: 40px;;
+  
+  }
+  
+  
+  .navbar  button:hover {
+    background: #ccc;
+  }
+  
+  .navbar{
+    overflow: hidden;
+    background-color: red;
+    width: 100%;
+  }
+  .column-card {
+    float: left;
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  
+  
+  .column {
+    float: left;
+    width: 420px;
+    padding-bottom: 40px;
+    margin-left: 40px;;
+  
+  }
+  
+  .navbar .search-container {
+    float: right;
+    width: 50%;
+  }
+  .navbar input[type=text] {
+    padding: 6px;
+    margin: 8px;
+    font-size: 17px;
+    border: none;
+    width: 50%;
+  }
+  
+  .navbar .search-container button {
+   
+    padding: 6px 10px;
+    margin: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar  .search-container button:hover {
+    background: #ccc;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  
+  
+  
+  /* Clear floats after the columns */
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #F08080;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    position: fixed;
+    bottom: -20px;
+    width: 100%;
+    overflow: hidden;
+   
+  }
+  .icon {
+    color: black;
+    height: 50%;
+    text-align: center;
+    margin-top: 6px;
+    padding: 12px 5px;
+    /* margin: 8px 0; */
+  }
+  
+  .input-icons i {
+    position: absolute;
+    right:10px;
+    top:3px;
+    cursor: pointer;
+  }
+  
+  .input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+    position:relative;
+  }
+    
+    
+  
+  }
+  
+  /* Responsive layout - when the screen is more than 1000px wide */
+  
+  @media screen and (min-width: 1000px) {
+    .container {
+        width: 80%;
+        margin: auto;
+        
+    }
+    .main {
+        padding: 100px;
+    }
+    .row {  
+        grid-template-columns: repeat(4,1fr);  
+  }
+  
+  .column {
+  float: left;
+  width: 420px;
+  padding-bottom: 40px;
+  margin-left: 40px;;
+  
+  }
+  
+  .imgselection {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    display: inline-block;
+    border: 3px solid black;
+  }
+  
+  /* Main column */
+  .main {
+    -ms-flex: 100%;
+    /* IE10 */
+    flex: 100%;
+    /* background-color: rgb(255, 255, 255); */
+    padding: 100px;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size:cover;
+    /* position: absolute; */
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: calibri;
+    border: 3px solid black;
+    color: indigo;
+    padding-bottom: 10px;
+    background-color: #FFEFD5;
+    font-weight: bold;
+    
+  
+  }
+  
+  .navbar input[type=search] {
+    padding:10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .navbar  button {
+    float: right;
+    padding: 10px 15px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar  button:hover {
+    background: #ccc;
+  }
+  
+  .navbar{
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+  }
+  .column-card {
+    float: left;
+    width: 25%;
+    padding: 10px 10px;
+    margin-top: 10px;
+    align-items: center;
+  }
+  .navbar .search-container {
+    float: right;
+    width: 50%;
+  }
+  .navbar input[type=text] {
+    padding: 6px;
+    margin: 8px;
+    font-size: 17px;
+    border: none;
+    width:50%;
+    
+  }
+  
+  .navbar .search-container button {
+  
+    padding: 6px 10px;
+    margin: 8px;
+   
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar  .search-container button:hover {
+    background: #ccc;
+  }
+  
+  
+  .column {
+    float: left;
+    width: 25%;
+    padding-bottom: 10px;
+   align-items: center;
+  }
+  .column-search {
+  float: left;
+  height: 50%;
+  padding-bottom: 10px;
+  align-items: center;
+  }
+  
+  /* Footer */
+  
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #F08080;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    position: fixed;
+    bottom: -20px;
+    width: 100%;
+    overflow: hidden;
+   
+  }
+    .forget {
+      background-color: #F08080;
+      padding: 15px 60px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      
+      
+    }
+  }
+  .a:link{
+    color: black;
+  }
+    .dropdown {
+      float: right;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size:18px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: grey;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 98px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .dropdown-content1 {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 115px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content1 a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content1 a:hover {
+      background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content1 {
+      display: block;
+    }
+  }
